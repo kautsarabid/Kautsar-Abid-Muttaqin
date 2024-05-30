@@ -1,4 +1,3 @@
-import Caraousel from "./components/Caraousel";
 import NavBody from "./components/Navbar/NavBody";
 import AboutBody from "./pages/About/AboutBody";
 import Contact from "./pages/Contact";
@@ -8,7 +7,7 @@ import SkillBody from "./pages/Skill/SkillBody";
 function App() {
 	return (
 		<>
-			<header className="fixed z-50 top-0 w-full">
+			<header className="fixed z-50 top-0 left-0 w-full">
 				<NavBody />
 			</header>
 
@@ -18,7 +17,6 @@ function App() {
 				<SkillBody />
 				<ProjectBody />
 				<Contact />
-				{/* <Caraousel /> */}
 			</main>
 		</>
 	);

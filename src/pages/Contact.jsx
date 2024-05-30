@@ -26,9 +26,12 @@ export default function Contact() {
 					type={"text"}
 					name={"body"}
 				/>
-				<Button classCSS={"py-4 px-20 hover:px-28 cursor-pointer"}>
+				<button
+					type="submit"
+					className="font-bold text-xl text-white  shadow-custom-active inline-block rounded-2xl hover:shadow-custom-hover transition-all duration-300 ease-in-out  py-4 px-20 hover:px-28 cursor-pointer"
+				>
 					Submit
-				</Button>
+				</button>
 			</form>
 		</section>
 	);

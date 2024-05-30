@@ -3,11 +3,11 @@
 @tailwind utilities;
 
 body {
-	@apply bg-black font-base relative overflow-x-hidden;
+	@apply bg-black font-base relative;
 }
 
 html {
-	@apply scroll-smooth;
+	@apply scroll-smooth  overflow-x-hidden;
 }
 
 .swiper-wrapper {
@@ -33,11 +33,12 @@ html {
 	@apply flex items-center justify-center shadow-custom-active rounded-full w-[50px] h-[50px] bg-black cursor-pointer md:w-[60px] md:h-[60px];
 }
 
-input:focus, input:valid {
+input:focus,
+input:valid {
 	@apply shadow-custom-hover outline-none;
 }
 
-input:focus + label, 
+input:focus + label,
 input:valid + label {
 	transform: translateY(-32px) translateX(6px) scale(0.75);
 	color: white;

@@ -19,7 +19,7 @@ export default function HeroBody() {
 		},
 	};
 	return (
-		<section className="relative bg-blur-atas" id="hero">
+		<section className="relative bg-blur-atas overflow-hidden" id="hero">
 			<div className="h-screen flex flex-col  items-center justify-center gap-3">
 				<HeroHeading />
 				<motion.div
