@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+	@apply bg-black font-base relative overflow-x-hidden;
+}
+
+html {
+	@apply scroll-smooth;
+}
+
+.swiper-wrapper {
+	@apply flex items-center;
+}
+
+.swiper-slide {
+	opacity: 0.5;
+	transform: scale(0.8);
+	transition: filter 0.3s ease;
+	filter: blur(5px);
+}
+
+.swiper-slide.swiper-slide-active {
+	transform: scale(1.5);
+	z-index: 99;
+	opacity: 1;
+	filter: blur(0);
+}
+
+.button-prev,
+.button-next {
+	@apply flex items-center justify-center shadow-custom-active rounded-full w-[50px] h-[50px] bg-black cursor-pointer md:w-[60px] md:h-[60px];
+}
+
+input:focus, input:valid {
+	@apply shadow-custom-hover outline-none;
+}
+
+input:focus + label, 
+input:valid + label {
+	transform: translateY(-32px) translateX(6px) scale(0.75);
+	color: white;
+	font-weight: bold;
+	width: fit-content;
+	z-index: 99;
+}
+
+@layer components {
+	.card-sosmed {
+		@apply shadow-custom-active rounded-full p-2 hover:shadow-custom-hover transition-shadow duration-300;
+	}
+
+	.bg-blur-atas {
+		@apply after:w-[25rem] after:h-[25rem] after:rounded-full after:absolute after:-z-10 after:blur-[255px] after:bg-primary after:-top-36 after:-left-36;
+	}
+
+	.bg-blur-atas {
+		@apply before:w-[25rem] before:h-[25rem] before:rounded-full before:absolute before:-z-10 before:blur-[255px] before:bg-secondary before:-bottom-36 before:-right-36;
+	}
+
+	.swiper-slide-active {
+		@apply h-screen;
+	}
+}
