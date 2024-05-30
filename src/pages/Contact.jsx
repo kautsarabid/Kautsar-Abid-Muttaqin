@@ -18,6 +18,7 @@ export default function Contact() {
 					htmlFor={"subject"}
 					type={"text"}
 					name={"subject"}
+					rows={2}
 				/>
 
 				<InputForm

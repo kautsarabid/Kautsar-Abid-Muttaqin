@@ -34,13 +34,16 @@ html {
 }
 
 input:focus,
-input:valid {
+input:valid, textarea:focus, textarea:valid {
 	@apply shadow-custom-hover outline-none;
 }
 
 input:focus + label,
-input:valid + label {
-	transform: translateY(-32px) translateX(6px) scale(0.75);
+input:valid + label, 
+textarea:focus + label,
+textarea:valid + label 
+{
+	transform: translateY(-32px) translateX(6px) scale(0.8);
 	color: white;
 	font-weight: bold;
 	width: fit-content;
