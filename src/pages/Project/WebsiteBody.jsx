@@ -19,7 +19,7 @@ export default function WebsiteBody() {
 		{
 			title: "MyPets",
 			image: Project2,
-			urlDemo: "https://github.com/kautsarabid/My-Pets",
+			urlDemo: "https://my-pets-two.vercel.app/",
 			urlGithub: "https://github.com/kautsarabid/My-Pets",
 			description:
 				"This project is a website for animal data collection designed to assist organizations, breeders, and researchers in managing information about various types of animals.",
